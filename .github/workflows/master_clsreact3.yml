@@ -10,7 +10,7 @@ on:
   
 env:
   AZURE_WEPAPP_NAME: clsreact3
-  AZURE_WEBAPP_PACKAGE_PATH: 'defaults'
+  AZURE_WEBAPP_PACKAGE_PATH: 'build'
   NODE_VERSION: '14.x'
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.1
+    - uses: actions/checkout@main
     - name: Use Node.js ${{ env.NODE_VERSION }}
       uses: actions/setup-node@v1
       with:
