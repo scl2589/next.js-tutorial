@@ -7,7 +7,7 @@ on: [push]
 
 env:
   AZURE_WEPAPP_NAME: clsreact3
-  AZURE_WEBAPP_PACKAGE_PATH: './build'
+  AZURE_WEBAPP_PACKAGE_PATH: './.next'
   NODE_VERSION: '14.x'
 
 jobs:
