@@ -7,8 +7,8 @@ on: [push]
 
 env:
   AZURE_WEPAPP_NAME: clsreact3
-  AZURE_WEBAPP_PACKAGE_PATH: 'defaults'
-  NODE_VERSION: '12.16.3'
+  AZURE_WEBAPP_PACKAGE_PATH: './build'
+  NODE_VERSION: '14.x'
 
 jobs:
   build-and-deploy:
